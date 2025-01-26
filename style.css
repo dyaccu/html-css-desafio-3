@@ -157,15 +157,16 @@ body{
 
     .header__menu {
         display: flex;
-        flex-direction: column; /* Apila los botones verticalmente */
-        align-items: center;
-        gap: 10px; /* Espaciado entre los botones */
+        flex-wrap: wrap; /* Permite que los elementos pasen a otra fila si no caben */
+        justify-content: center; /* Centra los botones */
+        gap: 10px; /* Espaciado entre botones */
     }
     
     .header__menu__link {
-        width: 80%; /* Ocuparán el 80% del ancho de la pantalla */
+        flex: 1 1 40%; /* Cada botón ocupará el 40% del ancho, permitiendo dos por fila */
         text-align: center;
         padding: 10px;
-        font-size: 18px; /* Tamaño de texto adecuado para móviles */
+        font-size: 18px;
+        min-width: 120px; /* Evita que sean demasiado pequeños */
     }
 }
