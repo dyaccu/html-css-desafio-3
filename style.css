@@ -154,4 +154,18 @@ body{
         flex-wrap: wrap; /* Hace que los botones se acomoden en varias filas */
         padding: 10px;
     }
+
+    .header__menu {
+        display: flex;
+        flex-direction: column; /* Apila los botones verticalmente */
+        align-items: center;
+        gap: 10px; /* Espaciado entre los botones */
+    }
+    
+    .header__menu__link {
+        width: 80%; /* Ocuparán el 80% del ancho de la pantalla */
+        text-align: center;
+        padding: 10px;
+        font-size: 18px; /* Tamaño de texto adecuado para móviles */
+    }
 }
